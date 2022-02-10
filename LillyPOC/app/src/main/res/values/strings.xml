@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Eli Lilly</string>
+
+    <string name="welcome">Welcome to</string>
+    <string name="do_it_yourself">Do It Yourself</string>
+
+    <string name="user_detail">User Detail</string>
+    <string name="first_name_label">Enter first name</string>
+    <string name="first_name_empty">Please enter first name</string>
+    <string name="last_name_label">Enter last name</string>
+    <string name="last_name_empty">Please enter last name</string>
+    <string name="email_label">Enter email</string>
+    <string name="email_empty">Please enter email</string>
+    <string name="invalid_email">Please enter valid email</string>
+    <string name="address_label">Enter address</string>
+    <string name="address_empty">Please enter address</string>
+    <string name="pincode_label">Enter pincode</string>
+    <string name="pincode_empty">Please enter pincode</string>
+
+    <string name="choose_setup_option">Choose any setup option to proceed</string>
+
+    <string name="start_setup">Start Setup</string>
+    <string name="enable_bluetooth">Please enable bluetooth and click next</string>
+    <string name="enable_bluetooth_error">Please enable bluetooth to proceed</string>
+
+    <string name="choose_diy_date">Choose DIY date</string>
+    <string name="diy_date_empty">Choose DIY date to proceed</string>
+
+    <string name="device_detail">Device Detail</string>
+    <string name="selected_device_label">Selected device</string>
+    <string name="device_serial_no">Device serial number</string>
+    <string name="device_serial_no_empty">Please enter device serial number</string>
+    <string name="device_version">Device version</string>
+    <string name="device_version_empty">Please enter device version</string>
+    <string name="device_name">Device name</string>
+    <string name="device_name_empty">Please enter device name</string>
+    <string name="invalid_device_data">Entered data did not match</string>
+
+    <string name="diy_done_successfully">DIY done successfully</string>
+    <string name="successfully_saved_data">Successfully saved data in local file</string>
+    <string name="unable_to_save">Could not save data in local file</string>
+
+    <string name="cancel_alert">You will loose all the data if you cancel it.</string>
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="proceed">Proceed</string>
+    <string name="Finish">Finish</string>
+    <string name="alert">Alert</string>
+
+</resources>

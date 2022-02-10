@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.elililly.lillypoc.view.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.elililly.lillypoc.view.UserDetailFragment"
+        android:label="UserDetailFragment" >
+        <action
+            android:id="@+id/action_userDetailFragment_to_setupOptionFragment"
+            app:destination="@id/setupOptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupOptionFragment"
+        android:name="com.elililly.lillypoc.view.SetupOptionFragment"
+        android:label="SetupOptionFragment" >
+        <action
+            android:id="@+id/action_setupOptionFragment_to_bluetoothSetupFragment"
+            app:destination="@id/bluetoothSetupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bluetoothSetupFragment"
+        android:name="com.elililly.lillypoc.view.BluetoothSetupFragment"
+        android:label="BluetoothSetupFragment" >
+        <action
+            android:id="@+id/action_bluetoothSetupFragment_to_DIYDateSelectionFragment"
+            app:destination="@id/DIYDateSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DIYDateSelectionFragment"
+        android:name="com.elililly.lillypoc.view.DIYDateSelectionFragment"
+        android:label="DIYDateSelectionFragment" >
+        <action
+            android:id="@+id/action_DIYDateSelectionFragment_to_deviceDetailFragment"
+            app:destination="@id/deviceDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deviceDetailFragment"
+        android:name="com.elililly.lillypoc.view.DeviceDetailFragment"
+        android:label="DeviceDetailFragment" >
+        <action
+            android:id="@+id/action_deviceDetailFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+        <action
+            android:id="@+id/action_deviceDetailFragment_to_setupOptionFragment"
+            app:destination="@id/setupOptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.elililly.lillypoc.view.SuccessFragment"
+        android:label="SuccessFragment" />
+
+    <action
+        android:id="@+id/goToWelcomePageWithClearStack"
+        app:destination="@id/welcomeFragment"
+        app:popUpTo="@id/welcomeFragment"
+        app:popUpToInclusive="true"/>
+</navigation>

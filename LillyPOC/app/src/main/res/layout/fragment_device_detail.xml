@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/eight_dp">
+
+            <TextView
+                style="@style/CustomTextViewBold"
+                android:layout_marginTop="@dimen/sixteen_dp"
+                android:text="@string/device_detail"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/CustomTextViewNormal"
+                android:text="@string/selected_device_label"
+                android:layout_marginTop="@dimen/sixteen_dp"/>
+
+            <TextView
+                android:id="@+id/textViewSelectedDevice"
+                android:layout_width="match_parent"
+                style="@style/CustomTextViewBold"
+                android:text="@string/device_detail"/>
+
+            <TextView
+                style="@style/CustomTextViewNormal"
+                android:layout_width="match_parent"
+                android:text="@string/device_serial_no"
+                android:layout_marginTop="@dimen/sixteen_dp"/>
+            <EditText
+                android:id="@+id/editTextDeviceSerialNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+            <TextView
+                style="@style/CustomTextViewNormal"
+                android:layout_width="match_parent"
+                android:text="@string/device_version"
+                android:layout_marginTop="@dimen/sixteen_dp"/>
+            <EditText
+                android:id="@+id/editTextDeviceVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+            <TextView
+                style="@style/CustomTextViewNormal"
+                android:layout_width="match_parent"
+                android:text="@string/device_name"
+                android:layout_marginTop="@dimen/sixteen_dp"/>
+            <EditText
+                android:id="@+id/editTextDeviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

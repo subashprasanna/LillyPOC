@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonChooseDIYDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_diy_date"
+            android:textSize="@dimen/normal_text_size"
+            android:drawableRight="@drawable/ic_date_picker"/>
+
+        <TextView
+            android:id="@+id/textViewDIYDate"
+            style="@style/CustomTextViewNormal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/sixteen_dp"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
